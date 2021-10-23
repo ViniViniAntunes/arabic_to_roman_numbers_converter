@@ -8,7 +8,7 @@
 <br>
 
 <h2><img src="images/challenge.png" width=60px/> Sobre </h2>
-<p> Fui desafiado a criar uma função que converte um número arábico dado como parâmetro em número romano. Desafio aceito! Segue duas soluções, em python e javacript </p>
+<p> Fui desafiado a criar uma função que converta um número arábico dado como parâmetro em número romano. Desafio aceito! Segue duas soluções, em python e javacript </p>
 
 <h2><img src="https://raw.githubusercontent.com/ViniViniAntunes/Prevendo_Valor_de_Aluguel_em_SP/master/Previsao_valor_aluguel/images/agradecimentos.svg" width=50px/> Agradecimentos </h2>
   <div>
