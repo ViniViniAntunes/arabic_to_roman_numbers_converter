@@ -17,16 +17,21 @@
       [1, 'I']
     ];
 
-    let resultado = '';
-    romanos.forEach(dupla => {
-      let div = Math.floor(num / dupla[0]);
-      num = num % dupla[0];
-      for (let i = div; i > 0; i--) {
-        resultado += dupla[1]
-      }
-    });
+    if (num < 4000) {
 
-    return resultado;
+      let resultado = '';
+      romanos.forEach(dupla => {
+        let div = Math.floor(num / dupla[0]);
+        num = num % dupla[0];
+        for (let i = div; i > 0; i--) {
+          resultado += dupla[1]
+        }
+      });
+
+      return resultado;
+    } else {
+      return toRoman(num / 1000) + ' ⎺ ' + toRoman(num - 1000 * Math.floor(num / 1000));
+    }
   };
 
   // Testes
@@ -82,4 +87,6 @@
   test(990, "CMXC");
   test(1000, "M");
 
+  // Para números maiores que 3999, a notação ' ⎺ ' será usada para indicar o fator 1000
+  console.log(toRoman(16987));
 })();
